@@ -1,21 +1,25 @@
 # Weather-Journal App Project
+The Weather Journal App is a normal journal app which logs the user's journals coupled with geographical information relative to the user's city. The user should 
+enter the zip code every time he needs to write his journal.
 
-The Weather-Journal App takes from the user two inputs (Zip code & his memo content)
-from the zip Code it makes a get Request API call from the client side to the openweathermap api
-From the API call such details are served in the app alogside the user memo content:
+
+
+The Weather-Journal App takes from the user two inputs (Zip code & his memo content).
+From the zip Code the App makes a get Request to an external weather API from the client side (API : openweathermap).
+From the API call such details are served in the app alogside the user journal content:
     1-Day status (morning eveneing or afternoon)
     2-City name & Country name
     3-Temperature
     4-Relative Time & Date for the City targeted
 
-According to the Day status the theme of the Application changes 
-the UI elements change dynamically according to the API data
+According to the Day status the styling theme of the Application changes.
+The UI elements change dynamically according to the API data
 
 Output:
     -User Memo content alongside the retrieved api data which includes the relative date, temperature and other details that were mentioned previously.
 
-These Data are then posted to the Node local server to be saved and to be retrieved at any time inside the application
-A get request is then made from the client side to access the data saved in the Node server and the data recieved is then displayed at the last entry section.
+These Data are then posted to a node server to be saved and to be retrieved at any time inside the application
+A get request is then made from the client side to access the data saved in the node server and the data recieved is then displayed at the last entry section.
 
 all route handles inside the Node application are made using express
 
