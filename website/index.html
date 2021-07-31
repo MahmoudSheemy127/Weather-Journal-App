@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="App">
+        <div class="content-generator">
+            <div class="input-fields">
+                <h2>What's in your mind</h2>
+                <label for="zipcode">Enter Zipcode here <span id="hint">(for weather information)</span></label>
+                <input type="text" name="" id="zipcode" placeholder="ex: 98101">
+                <label for="feelings">How are you feeling today?</label>
+                <textarea name="" id="feelings" cols="30" rows="10"></textarea>
+                <button id="generate">Generate</button>
+            </div>
+        </div>
+        <hr>
+        <h3>Most Recent Entry</h3>
+        <div class="entry">
+        <div class="details">
+            <h2 id="salute"></h2>
+               <div id="date"></div>
+               <div id="time"></div>
+               <div id="temp"></div>
+               <div id="content"></div>
+               <div id="local"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
